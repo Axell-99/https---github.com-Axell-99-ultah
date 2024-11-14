@@ -60,6 +60,7 @@ body {
     font-family: 'Pacifico', cursive;
     margin-bottom: 10px;
 }
+
 .overlay {
     display: flex;
     justify-content: center;
@@ -97,6 +98,7 @@ h1 {
 p {
     font-size: 1.5em;
 }
+
 .event-date {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -173,4 +175,78 @@ input, button {
 
 .rsvp-button:hover {
     background-color: #e2554d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header {
+        height: 50vh; /* Adjust height for smaller screens */
+        padding: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 2em; /* Reduce font size */
+    }
+
+    .event-date {
+        font-size: 1em; /* Reduce font size */
+    }
+
+    .cta-button {
+        font-size: 0.9em; /* Adjust button size */
+    }
+
+    .details-section, .countdown-section, .gallery-section, .rsvp-section {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    .gallery-item {
+        width: 100px; /* Adjust gallery item size */
+        height: 100px;
+    }
+
+    .map iframe {
+        height: 200px; /* Adjust map height */
+    }
+
+    .rsvp-form input, .rsvp-form textarea, .rsvp-form button {
+        font-size: 0.9em; /* Adjust input/button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 40vh; 
+    }
+
+    .header-content h1 {
+        font-size: 1.5em; 
+    }
+    .event-date {
+        font-size: 0.8em; 
+    }
+
+    .cta-button {
+        padding: 8px 16px; 
+    }
+
+    .gallery-item {
+        width: 80px;
+        height: 80px;
+    }
 }
