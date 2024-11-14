@@ -60,7 +60,43 @@ body {
     font-family: 'Pacifico', cursive;
     margin-bottom: 10px;
 }
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    color: white;
+}
 
+.content {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.wedding-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+}
 .event-date {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -100,6 +136,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    filter: drop-shadow(15px 5px 4px #b9457f);
 }
 
 .gallery-item {
